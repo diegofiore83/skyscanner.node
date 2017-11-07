@@ -103,6 +103,6 @@ app.get('/api/search', (req, res) => {
   .catch(console.error);
 });
 
-app.listen(4000, () => {
-  console.log('Node server listening on http://localhost:4000');
+app.listen(80, () => {
+  console.log('Node server listening on http://localhost:80');
 });
