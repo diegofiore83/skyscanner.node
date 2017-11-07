@@ -31,7 +31,7 @@ app.get('/api/search', (req, res) => {
   })
   .then((results) => {
     
-    switch (res.query.view) {
+    switch (req.query.view) {
       case 'result' : {
         let uiResults = []; 
       
