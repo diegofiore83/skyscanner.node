@@ -1,0 +1,8 @@
+INSTALL AWS NODE SERVER
+
+https://www.youtube.com/watch?v=IX82eeuCPIg
+
+not forget to install latest version of node trought nvm https://uk.godaddy.com/help/install-nodejs-ubuntu-17395
+
+to remove error on localhost:80  ---- sudo setcap 'cap_net_bind_service=+ep' $(which node)
+

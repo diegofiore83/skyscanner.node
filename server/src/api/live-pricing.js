@@ -26,22 +26,12 @@ const livePricing = {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        // uncomment if you'd like to use a development proxy (e.g. Charles or Fiddler)
-        // agent: new HttpProxyAgent({
-        //   host: 'localhost',
-        //   port: '8888'
-        // })
+        }
       })
     },
     pollSession: (creds) => {
       return fetch(pricingUrl + `/${creds.sessionKey}?apiKey=${config.apiKey}`, {
-        method: 'GET',
-        // uncomment if you'd like to use a development proxy (e.g. Charles or Fiddler)
-        // agent: new HttpProxyAgent({
-        //   host: 'localhost',
-        //   port: '8888'
-        // })
+        method: 'GET'
       })
     }
   }
