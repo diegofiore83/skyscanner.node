@@ -137,7 +137,6 @@ function pollSuccess (state, data) {
   state.repoll();
 }
 
-// Not implemented: error handling by response code
 function pollError (state, err) {
   state.tries ++;
   if (!state.timedOut && state.tries < maxRetries) {
@@ -151,11 +150,11 @@ const sessionParams = (query) => {
     apiKey: config.apiKey,
     adults: query.adults,
     cabinclass: query.class,
-    country: 'UK',
-    currency: 'GBP',
+    country: query.market,
+    currency: query.currency,
     destinationplace: query.toPlace,
     inbounddate: query.toDate,
-    locale: 'en-GB',
+    locale: query.locale,
     locationschema: 'Sky',
     originplace: query.fromPlace,
     outbounddate: query.fromDate

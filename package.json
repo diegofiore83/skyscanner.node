@@ -52,7 +52,8 @@
     "bpk-mixins": "^11.0.0",
     "bpk-stylesheets": "^3.2.14",
     "es6-promise": "^3.2.1",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "request-promise": "^4.2.2"
   },
   "scripts": {
     "server": "cd server && node src/server.js"
